@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div class="calculator">
+		<div class="screen">
+			<div id="result"></div>
+			<div id="operation"></div>
+		</div>
+
+		<div class="buttons">
+		
+			<div class="btn btn-ac" onclick="document.getElementbyId('result').innerHTML = '' ">AC</div>
+			<div class="btn" onclick="document.getElementbyId('operation').innerHTML= '' ">C</div>
+			<div class="btn" onclick="document.getElementbyId('operation').innerHTML+= '/' ">/</div>
+			<div class="btn" onclick="document.getElementbyId('operation').innerHTML+= '*' ">*</div>
+			<div class="btn" onclick="document.getElementbyId('operation').innerHTML+= '7' ">7</div>
+			<div class="btn" onclick="document.getElementbyId('operation').innerHTML+= '8' ">8</div>
+			<div class="btn" onclick="document.getElementbyId('operation').innerHTML+= '9' ">9</div>
+			<div class="btn" onclick="document.getElementbyId('operation').innerHTML+= '-' ">-</div>
+			<div class="btn" onclick="document.getElementbyId('operation').innerHTML+= '4' ">4</div>
+			<div class="btn" onclick="document.getElementbyId('operation').innerHTML+= '5' ">5</div>
+			<div class="btn" onclick="document.getElementbyId('operation').innerHTML+= '6' ">6</div>
+			<div class="btn" onclick="document.getElementbyId('operation').innerHTML+= '+' ">+</div>
+			<div class="btn" onclick="document.getElementbyId('operation').innerHTML+= '1' ">1</div>
+			<div class="btn" onclick="document.getEAlementbyId('operation').innerHTML+= '2' ">2</div>
+			<div class="btn" onclick="document.getElementbyId('operation').innerHTML+= '3' ">3</div>
+			<div class="btn btn-result" onclick="myFunction()">=</div>
+			<div class="btn btn-0" onclick="document.getElementbyId('operation').innerHTML+= '0' ">0</div>
+			<div class="btn" onclick="document.getElementbyId('operation').innerHTML+= '.' ">.</div>
+
+		</div>
+
+	</div>
+
+	<script>
+
+		function myFunction(){
+
+			let x = eval(document.getElementbyId('operation').innerHTML);
+
+			document.getElementbyId('result').innerHTML = x.toFixed(5);
+		}
+
+	</script>
+
+</body>
+</html>
