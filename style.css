@@ -42,7 +42,8 @@ body{
 }
 
 #result{
-	font-size: 3rem;
+	padding-top: 5px;
+	font-size: 2rem;
 	overflow: hidden;
 	color: #6C63FF;
 	text-align: right;
