@@ -28,8 +28,9 @@ body{
 	background-color: rgb(44, 64, 93);
 	border-radius: 10px;
 	/* border: 1px solid white; */
-	display: grid;
+	/* display: grid; */
 	grid-template-rows: 60% 30%;
+<<<<<<< HEAD
 	/* gap: 8%; */
 	/* padding: 2px; */
 }
@@ -52,6 +53,34 @@ body{
 	max-width: 14ch;
 	/* text-overflow:clip; */
 	overflow: hidden;
+=======
+	gap: 8%;
+	/* padding: 50px; */
+	text-align: right;
+	align-items: center;
+	padding: 0px 8px;
+	
+}
+
+#result{
+	padding-top: 5px;
+	font-size: 2rem;
+	overflow: hidden;
+	color: #6C63FF;
+	text-align: right;
+	align-items: center;
+	/* border: 1px solid rgb(234, 247, 0); */
+	
+}
+#operation{
+	padding: 5px 5px;
+	height:85px ;
+	text-align: right;
+	
+	font-size: 1.5rem;
+	/* border: 1px solid white; */
+
+>>>>>>> 76d9d0fe266056513e02a4d8d865d8762cace724
 }
 .buttons{
 	margin-top: 2rem;
@@ -79,7 +108,6 @@ body{
 }
 .btn:active{
 	color: #6C63FF;
-	/* background-color:rgb(176, 44, 0); */
 }
 .btn-0{
 	grid-column:1/3 ;
