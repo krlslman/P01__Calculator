@@ -129,22 +129,13 @@ function reverseFunction(){
   screenOperation.textContent =tempResult.toFixed(2);
 };
 function decimalFunction(){
-  // calculate()
-  // if (screenResult.textContent=='') {
-  //   // sayıyı yazıp eşittire basmadan işaretini - ile çarpmak için
-  //   screenResult.textContent=screenOperation.textContent
-  // }
-  lastNumber = screenOperation.textContent.split(TheOperator);
-  tempResult = lastNumber[lastNumber.length-1];
-  if (!screenOperation.textContent.includes('.')) {
-    // console.log('ahahaha')
+  // ondalık noktası koymak için
+
+  // lastNumber = screenOperation.textContent.split(TheOperator); // sayılara ayırarak array ile yapmak içindi
+  // tempResult = lastNumber[lastNumber.length-1]; // sayılara ayırarak array ile yapmak içindi
+  if ((screenOperation.textContent.slice(screenOperation.textContent.length-1,screenOperation.textContent.length))!='.') {
     screenOperation.textContent += '.';
-    // sayıyı yazıp eşittire basmadan işaretini - ile çarpmak için
-    // screenResult.textContent=screenOperation.textContent
   }
-  // tempResult = screenResult.textContent * (-1);
-  // screenResult.textContent = tempResult.toFixed(2);
-  // screenOperation.textContent =tempResult.toFixed(2);
 };
 
 buttons.addEventListener('click', (e) => {
